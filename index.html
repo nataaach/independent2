@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ср2</title>
+    <style>
+        /* Стилі для елементів з закругленими кутами */
+        #rcorners1 {
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;  
+            margin: 10px;
+        }
+
+        #rcorners2 {
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        #rcorners3 {
+            border-radius: 25px;
+            background: url('paper.gif');
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px; 
+            width: 200px;
+            height: 150px;  
+            margin: 10px;
+        }
+
+        /* Стиль для анімованого div */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation-name: color-change;
+            animation-duration: 4s;
+            margin: 20px;
+        }
+
+        /* Анімація */
+        @keyframes color-change {
+            from {background-color: red;}
+            to {background-color: yellow;}
+        }
+
+        /* Стиль для заголовків */
+        h1, h2 {
+            text-align: center;
+            color: darkblue;
+            padding: 10px;
+        }
+
+        /* Загальні стилі для сторінки */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+     /* Фон для сторінки */
+     body {
+            background-image: url("paper.gif");
+            font-family: Arial, sans-serif;
+        }
+
+        /* Стиль для заголовків */
+        h1, h2 {
+            text-align: center;
+            color: darkblue;
+            padding: 10px;
+        }
+
+        /* Стиль для div з зеленим фоном */
+        div.ex1 { 
+            background-color: lightgreen;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        /* Стиль для div з прозорим фоном */
+        div.ex2 { 
+            background-color: transparent;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 10px;
+        } 
+
+        /* Стиль для div з box-shadow */
+        div.shadowed {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: coral;
+            box-shadow: 10px 10px 5px lightblue inset;
+            margin: 10px;
+        }
+
+        /* Стиль для кнопок */
+        .button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Стиль для таблиць */
+        .styled-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+        }
+
+        .styled-table th, .styled-table td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .styled-table th {
+            background-color: #f2f2f2;
+        }
+
+        /* Стиль для списків */
+        ul.a {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+        ul.b {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        ol.c {
+            list-style-type: upper-roman;
+            margin-left: 20px;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+            margin-left: 20px;
+        }
+
+        /* Стиль для посилань */
+        a:link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /* Новий стиль для div з висотою і шириною */
+        div.resizable {
+            height: 200px;
+            width: 50%;
+            background-color: powderblue;
+            margin: 20px auto;
+        }
+
+        /* Стиль для таблиці зі смугами */
+        table.striped-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 25px 0;
+        }
+
+        .striped-table th, .striped-table td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        .striped-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Прозорий і Зелений Блоки</h2>
+    <div class="ex1">Цей блок має світло-зелений фон.</div>
+    <div class="ex2">Цей блок має прозорий фон.</div>
+
+    <h2>Блок з Тінню</h2>
+    <div class="shadowed">Цей блок має внутрішню тінь світло-блакитного кольору.</div>
+
+    <h2>Кнопки</h2>
+    <button class="button">Натисни мене</button>
+
+    <h2>Таблиця</h2>
+    <table class="styled-table">
+        <tr>
+            <th>Ім'я</th>
+            <th>Вік</th>
+        </tr>
+        <tr>
+            <td>Анна</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Петро</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+    <h2>Списки</h2>
+    <ul class="a">
+        <li>Круглий маркер</li>
+        <li>Ще один пункт</li>
+    </ul>
+
+    <ul class="b">
+        <li>Квадратний маркер</li>
+        <li>Інший пункт</li>
+    </ul>
+
+    <ol class="c">
+        <li>Перший пункт</li>
+        <li>Другий пункт</li>
+    </ol>
+
+    <ol class="d">
+        <li>Пункт A</li>
+        <li>Пункт B</li>
+    </ol>
+
+    <h2>Посилання</h2>
+    <p>Перейдіть за <a href="#">цим посиланням</a>.</p>
+
+    <h2>Елемент з Встановленою Висотою і Шириною</h2>
+    <div class="resizable">Цей div має висоту 200px і ширину 50%.</div>
+
+    <h2>Смугаста Таблиця</h2>
+    <table class="striped-table">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+        </tr>
+    </table>
+
+    <h1>Поєднаний Приклад: Border-radius та Анімація</h1>
+
+    <h2>Елементи з Закругленими Кутами</h2>
+    <p>Закруглені кути для елемента з фоном:</p>
+    <p id="rcorners1">Закруглені кути!</p>
+    <p>Закруглені кути для елемента з рамкою:</p>
+    <p id="rcorners2">Закруглені кути!</p>
+    <p>Закруглені кути для елемента з фоновим зображенням:</p>
+    <p id="rcorners3">Закруглені кути!</p>
+
+    <h2>CSS Анімація</h2>
+    <div class="animated-box"></div>
+    <p><b>Примітка:</b> Після завершення анімації елемент повернеться до початкового стилю.</p>
+    <h2>Властивості ширини та висоти</h2>
+
+    <p>Встановіть ширину таблиці та висоту заголовка таблиці:</p>
+    
+    <table class="custom-table">
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Збереження</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    <h2>Вирівнювання таблиці</h2>
+    <h2>Властивість text-align</h2>
+    
+    <p>Ця властивість задає горизонтальне вирівнювання (ліворуч, праворуч або по центру) в th або td.</p>
+    
+    <table class="centered-table">
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Збереження</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    <h2>Границя таблиці з роздільниками</h2>
+    
+    <table class="bordered-table">
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Збереження</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    <h2>Смугаста таблиця</h2>
+    <table class="striped-table">
+      <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Очки</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+      </tr>
+    </table>
+    <h2>Адаптивна таблиця</h2>
+<p>Адаптивна таблиця буде відображати горизонтальну смугу прокрутки, якщо екран занадто малий, щоб відобразити весь вміст. Змініть розмір вікна браузера, щоб побачити ефект:</p>
+<p>Для створення адаптивної таблиці додайте контейнер (такий як div) з <strong>overflow-x:auto</strong> навколо елемента таблиці:</p>
+
+<div style="overflow-x: auto;">
+  <table class="responsive-table">
+    <tr>
+      <th>Ім'я</th>
+      <th>Прізвище</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+      <th>Очки</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+      <td>67</td>
+    </tr>
+  </table>
+  
+</body>
+</html>
